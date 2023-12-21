@@ -1,6 +1,6 @@
 Hello Reflourished fans.
 
-...if you dont know what reflourished is then you wont get the reference but screw it anyway.
+...if you dont know what reflourished is then you wont get the reference but lets just say its a pvz2 mod.
 
 The .pop file needs to be in the "population" folder in this path: Steam\steamapps\common\Team Fortress 2\tf\scripts\population
 
