@@ -8,6 +8,8 @@ If you don't have a population folder yet then just simply create one.
 
 Custom icons (vtf and vmt files) must be placed in Steam\steamapps\common\Team Fortress 2\tf\materials\hud
 
+If you don't have a hud folder yet then you know what to do.
+
 To play the mission, type in console: "map mvm_decoy" then call vote to change mission to bream_cage.
 
 Also type in tf_forced_holiday 2 for zombie robots skin.
