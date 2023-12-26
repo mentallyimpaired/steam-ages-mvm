@@ -32,7 +32,6 @@ population
 			SpawnCount	1
 			WaitBeforeStarting	0
 			WaitBetweenSpawns	10
-                        FirstSpawnWarningSound  "work_overtime.MP3"
 			Where	spawnbot
 			Squad
 			{
