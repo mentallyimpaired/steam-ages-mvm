@@ -1,0 +1,97 @@
+#base robot_giant.pop
+#base robot_standard.pop
+#base robot_gatebot.pop
+population
+{
+	StartingCurrency	30000
+	RespawnWaveTime	1
+	CanBotsAttackWhileInSpawnRoom	no
+        EventPopfile	Halloween
+	Templates
+	{
+	}
+	Wave
+	{
+		WaitWhenDone	65
+		Checkpoint	Yes
+		StartWaveOutput
+		{
+			Target	wave_start_relay
+			Action	Trigger
+		}
+		DoneOutput
+		{
+			Target	wave_finished_relay
+			Action	Trigger
+		}
+		WaveSpawn
+		{
+			TotalCurrency	0
+			TotalCount	1
+			MaxActive	1
+			SpawnCount	1
+			WaitBeforeStarting	0
+			WaitBetweenSpawns	10
+                        FirstSpawnWarningSound  "work_overtime.MP3"
+			Where	spawnbot
+			Squad
+			{
+				TFBot
+				{
+                                        ClassIcon	engineer_mechanic
+                                        Name	"Mechanic Zombie"
+					Health	60000
+					Scale	1.9
+					Template	T_TFBot_Engineer_Sentry_Tele_Battle
+					Tag	"bot_giant"
+					Attributes	"MiniBoss"
+                                        Attributes	"UseBossHealthBar"
+					ItemAttributes
+					{
+						ItemName	"tf_weapon_wrench"
+						"fire rate bonus"	0.5
+					}
+					CharacterAttributes
+					{
+						"engineer teleporter build rate multiplier"	20
+                                                "engineer sentry build rate multiplier"	20
+                                                "move speed penalty"	20
+                                                "engy building health bonus"	100
+					}
+                                        Item	"tough stuff muffs"
+					Item	"merc's pride scarf"
+				}
+			}
+		}
+                WaveSpawn
+		{
+			TotalCurrency	0
+			TotalCount	500
+			MaxActive	20
+			SpawnCount	1
+			WaitBeforeStarting	30
+			WaitBetweenSpawns	15
+                        Support	1
+			Where	spawnbot
+			Squad
+			{
+				TFBot
+				{
+                                        ClassIcon	heavy_clockwork
+			                Health	5000
+			                Name	"Clockwork Zombie"
+			                Scale	1.5
+			                Class	HeavyWeapons
+			                Skill	Hard
+			                WeaponRestrictions	MeleeOnly
+			                Attributes	"AlwaysCrit"
+                                        Attributes	"MiniBoss"
+                                        CharacterAttributes
+			                {
+				        "move speed penalty"	0.6
+                                        }
+			                Item	"fists of steel"
+                                        Item	"big steel jaw of summer fun"
+				}
+                        }
+                }
