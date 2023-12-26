@@ -1,3 +1,5 @@
+Credit: in-game music by @whisperjas.
+
 Hello Reflourished fans.
 
 ...if you dont know what reflourished is then you wont get the reference but lets just say its a pvz2 mod.
@@ -9,6 +11,8 @@ If you don't have a population folder yet then just simply create one.
 Custom icons (vtf and vmt files) must be placed in Steam\steamapps\common\Team Fortress 2\tf\materials\hud
 
 If you don't have a hud folder yet then you know what to do.
+
+The MP3 file needs to be in this path: Steam\steamapps\common\Team Fortress 2\tf\sound
 
 To play the mission, type in console: "map mvm_decoy" then call vote to change mission to bream_cage.
 
